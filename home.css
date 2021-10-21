@@ -1,0 +1,347 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 2vw;
+  align-items: center;
+}
+.header #login {
+  text-decoration: none;
+  color: black;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.header #logo {
+  width: 15rem;
+  margin-left: 6.1rem;
+}
+
+/* mobile UI*/
+#mob-logo {
+  display: none;
+}
+
+/* banner*/
+.banner-image img {
+  width: 100%;
+}
+
+/* mobile Ui*/
+.mob-nav {
+  display: none;
+}
+
+.filter p {
+  display: none;
+}
+
+/* DROUPDOWN MENU*/
+#dropbtn {
+  font-size: 16px;
+  width: 14rem;
+  color: white;
+  background-color: #1b928af5;
+  border: 2px solid rgba(74, 216, 220, 0.79);
+  margin: 0.5rem -3rem 0.5rem 8rem;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 2px;
+}
+
+#dropbtn1 {
+  font-size: 16px;
+  width: 15rem;
+  color: white;
+  background-color: #1b928af5;
+  border: 2px solid rgba(74, 216, 220, 0.79);
+  margin: 0.5rem -3rem 0.5rem 5rem;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 2px;
+}
+
+.dropcontainer {
+  display: flex;
+  background-color: #1b928af5;
+}
+
+.drop {
+  color: rgba(74, 216, 220, 0.79);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0.5rem;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 0.5rem;
+}
+
+.dropdown i {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  color: #6dda00;
+  margin-right: 0.5rem;
+}
+
+.right-icon i {
+  color: white;
+  background-color: #81e033;
+  padding: 9px 16px;
+  margin: 11px 0px 0px 81px;
+  font-size: 30px;
+}
+
+/* PAGES FIELD */
+#pages {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5vw 2vw;
+}
+
+#next-page {
+  color: black;
+  margin-right: 21vw;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#page {
+  font-weight: bold;
+  margin-left: 40vw;
+  font-size: 1.3rem;
+}
+
+/* DRESS CART */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem 6.6rem;
+}
+
+.items {
+  width: 30%;
+  margin-bottom: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: -3px 5px 26px -4.5px;
+}
+
+.cartimg {
+  width: 100%;
+  opacity: 1;
+}
+
+.cartimg:hover {
+  opacity: 0.5;
+}
+
+.items:hover:after {
+  content: "✖";
+  position: absolute;
+  padding: 10px;
+  background-color: #73ad39;
+  display: block;
+  top: 119px;
+  left: 275px;
+  text-align: center;
+  color: white;
+  font-size: 31px;
+  height: 41px;
+  width: 40px;
+  border-radius: 32px;
+  box-shadow: 0px 3px 18px -7.5px #242222fc;
+}
+
+.items:hover:before {
+  content: "✎";
+  position: absolute;
+  padding: 10px;
+  background-color: #73ad39;
+  top: 119px;
+  left: 59px;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  height: 42px;
+  width: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 18px -7.5px #242222fc;
+}
+
+.items button {
+  padding: 1em 1em;
+  background-color: #73ad398a;
+  color: white;
+  border: none;
+  width: 80%;
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 19px;
+  text-align: center;
+}
+
+.money {
+  font-size: 28px;
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* MOBILE UI ICONS*/
+.plus-icon i {
+  display: none;
+}
+
+.header i {
+  display: none;
+}
+
+@media only screen and (max-width: 376px) {
+  .header {
+    margin: 0;
+    background-color: #00a69c;
+  }
+
+  #login {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #mob-logo {
+    display: inline-block;
+    position: relative;
+    left: 7rem;
+    padding: 1.5rem 0rem;
+    width: 40%;
+  }
+
+  .banner-image img {
+    display: none;
+  }
+
+  .dropcontainer {
+    display: none;
+  }
+
+  .mob-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d746a;
+    position: relative;
+  }
+
+  .mob-nav i {
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  .mob-nav i:hover {
+    border-bottom: 3px solid #ececa9;
+  }
+
+  .mob-nav p {
+    position: absolute;
+    color: white;
+    padding: 0px 0px 16px 3px;
+    background-color: #77b52c;
+    height: 16px;
+    border-radius: 10px;
+    top: 1px;
+    font-size: 13px;
+    width: 14px;
+    right: 39px;
+  }
+
+  .filter p {
+    display: inline-block;
+    color: #f6f1b3;
+    background-color: #77b52c;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  #pages {
+    display: none;
+  }
+
+  .grid {
+    flex-direction: column;
+    margin: 0rem 0rem;
+    background-color: whitesmoke;
+  }
+
+  .items {
+    width: 100%;
+    height: 359px;
+  }
+
+  .items button {
+    display: none;
+  }
+
+  .plus-icon i {
+    background-color: #8bd768;
+    color: white;
+    display: inline-block;
+    width: 42px;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 98px;
+    position: relative;
+    top: -26px;
+    left: -10px;
+    display: inline-block;
+  }
+
+  .text {
+    margin-top: -2rem;
+    color: #777777;
+    font-weight: bold;
+  }
+
+  .header i {
+    display: inline-block;
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    left: -30px;
+  }
+
+  .money {
+    position: relative;
+    left: -21px;
+    top: 11px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
